@@ -12,6 +12,7 @@ export class AppComponent {
   ) { }
 
   ngOnInit(): void {
+    // this.gotoTop();
     let sections = document.querySelectorAll('section');
     let navLinks = document.querySelectorAll('header nav a');
     let header = document.querySelector(".header") as HTMLElement;
@@ -44,4 +45,12 @@ export class AppComponent {
     darkModeIcon?.classList.toggle('bx-sun');
     document.body.classList.toggle('dark-mode');
   }
+
+  // gotoTop(){
+  //   window.scroll({
+  //     top:0,
+  //     left:0,
+  //     behavior: 'smooth',
+  //   })
+  // }
 }
