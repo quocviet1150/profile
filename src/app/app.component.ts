@@ -15,10 +15,13 @@ export class AppComponent {
     let sections = document.querySelectorAll('section');
     let navLinks = document.querySelectorAll('header nav a');
     let header = document.querySelector(".header") as HTMLElement;
+    // smooth
     window.onscroll = () => {
       header.classList.toggle("sticky", window.screenY > 100);
     };
 
+
+    //active
     window.onscroll = () => {
       sections.forEach(sec => {
         let top = window.scrollY;
@@ -36,4 +39,9 @@ export class AppComponent {
     }
   }
 
+  toggleDarkMode() {
+    const darkModeIcon = document.querySelector('#darkMode-icon');
+    darkModeIcon?.classList.toggle('bx-sun');
+    document.body.classList.toggle('dark-mode');
+  }
 }

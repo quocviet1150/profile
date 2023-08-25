@@ -27,7 +27,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": ["../node_modules/scrollreveal/dist/scrollreveal.js"]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -94,5 +94,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "18d4e8be-80be-41eb-a68a-c0cf1373a403"
   }
 }
