@@ -381,6 +381,14 @@ span {
   letter-spacing: 1;
 }
 
+.product p {
+  font-size: 1.6rem;
+  margin: 2rem 0 3rem;
+  letter-spacing: 1;
+  display: flex;
+  justify-content: center;
+}
+
 .services {
   min-height: auto;
   padding-top: 7rem;
